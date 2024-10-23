@@ -1,0 +1,138 @@
+/* General container styling */
+body {
+    background: linear-gradient(45deg, #4fc3f7, #81d4fa, #b3e5fc); /* Mezcla de azules y celeste */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor centrado */
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Sombra 3D */
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+/* Títulos con diferentes colores */
+h1 {
+    color: #0d47a1; /* Azul oscuro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Letras 3D */
+}
+h2 {
+    color: #1e88e5; /* Azul medio */
+}
+h3 {
+    color: #0288d1; /* Azul cielo */
+}
+h4 {
+    color: #03a9f4; /* Azul claro */
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #00796b; /* Color de borde */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #004d40;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+}
+
+td {
+    background-color: #e0f2f1;
+}
+
+/* Estilo para botones 3D */
+a, input[type="submit"] {
+    background-color: #00796b; /* Verde llamativo */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Efecto 3D */
+    border: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 5px; /* Espacio entre botones */
+}
+
+a:hover, input[type="submit"]:hover {
+    background-color: #004d40; /* Cambio de color al pasar el cursor */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones editar y eliminar con más espacio y alineados */
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+a.editar {
+    background-color: #4caf50; /* Verde */
+}
+
+a.eliminar {
+    background-color: #f44336; /* Rojo */
+}
+
+/* Campos de entrada con efecto 3D */
+input[type="text"], input[type="number"], input[type="date"] {
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); /* Efecto 3D interno */
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Logo en la esquina, ahora redondeado */
+img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* Imagen redonda */
+    border: 2px solid #00796b; /* Borde para hacerla más visible */
+}
+
+/* Personalización del campo de texto en el formulario */
+label {
+    color: #00796b;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+/* Transición suave para todo */
+* {
+    transition: all 0.2s ease;
+}
